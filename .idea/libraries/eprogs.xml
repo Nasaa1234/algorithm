@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="eprogs">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/eprogs.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/eprogs.zip!/" />
+    </SOURCES>
+  </library>
+</component>
