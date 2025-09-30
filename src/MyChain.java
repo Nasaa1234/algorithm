@@ -57,7 +57,7 @@ public class MyChain extends Chain {
 
         MyChain c2 = new MyChain();
         c2.add(0, "B");
-        c2.add(1, "C");
+        c2.add(1,   "C");
         c2.add(2, "D");
 
         Object[] arr = c1.toArray();
@@ -71,7 +71,7 @@ public class MyChain extends Chain {
 
         MyChain inter = c1.intersection(c2);
 
-        System.out.println(java.util.Arrays.toString(inter.toArray())); // [B, C]
+        System.out.println(java.util.Arrays.toString(inter.toArray()));
 
     }
 
