@@ -1,6 +1,8 @@
-
+package lab.tests;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import lab.functions.MyChain;
 import org.junit.jupiter.api.Test;
 
 

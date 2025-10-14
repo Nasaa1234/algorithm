@@ -1,3 +1,6 @@
+package lab.tests;
+
+import lab.functions.MyStack;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -6,14 +9,14 @@ class MyStackTest {
     @Test
     void emptyAndPushPop() {
         MyStack stack = new MyStack(3);
-        assertTrue(stack.empty(), "Stack should be empty at start");
+        assertTrue(stack.empty(), "Хоосон байх естой");
 
         stack.push(10);
-        assertFalse(stack.empty(), "Stack should not be empty after push");
+        assertFalse(stack.empty(), "Хоосон байх есгүй");
 
         Object popped = stack.pop();
-        assertEquals(10, popped, "Pop should return the pushed element");
-        assertTrue(stack.empty(), "Stack should be empty again after pop");
+        assertEquals(10, popped, "10 буцаана");
+        assertTrue(stack.empty(), "Хоосон байх естой");
     }
 
     @Test
@@ -23,7 +26,7 @@ class MyStackTest {
 
         stack.push(1);
         stack.push(2);
-        assertTrue(stack.isFull(), "Stack should be full after pushing capacity elements");
+        assertTrue(stack.isFull());
     }
 
     @Test
@@ -48,19 +51,21 @@ class MyStackTest {
 
 
     @Test
-    void splitStack() {
-        MyStack stack = new MyStack(5);
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-        stack.push(4);
-        stack.push(5);
+    void testSplitStack() {
+        MyStack test = new MyStack(10);
 
-        MyStack[] parts = stack.splitStack();
-        assertEquals(3, parts[0].size(), "First split should have 3 elements");
-        assertEquals(2, parts[1].size(), "Second split should have 2 elements");
+        test.push(1);
+        test.push(2);
+        test.push(3);
+        test.push(4);
+        test.push(5);
+
+        MyStack[] tested = test.splitStack();
+
+        assertEquals(3, tested[0].size(), "Urt  n 3 bh ystoi");
+        assertEquals(2, tested[1].size(), "Urt  n 2 bh ystoi");
+
     }
-
     @Test
     void inputStack() {
         MyStack stack = new MyStack(3);

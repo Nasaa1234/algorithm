@@ -1,3 +1,5 @@
+package lab.functions;
+
 import dataStructures.Stack;
 
 public class MyStack implements Stack { //last in first out LIFO
@@ -49,12 +51,12 @@ public class MyStack implements Stack { //last in first out LIFO
     }
 
     public MyStack[] splitStack() {
-        int mid = (size() + 1) / 2;
+        int mid = (this.size() + 1 ) / 2;
         MyStack firstSplit = new MyStack(mid);
-        MyStack secondSplit = new MyStack(size() - mid);
+        MyStack secondSplit = new MyStack(this.size() - mid);
 
-        for (int i = 0; i <= top; i++) {
-            if (i < mid) firstSplit.push(stack[i]);
+        for ( int i = 0 ; i <= this.size(); i++ ) {
+            if ( i < mid ) firstSplit.push(stack[i]);
             else secondSplit.push(stack[i]);
         }
         return new MyStack[]{firstSplit, secondSplit};
@@ -73,6 +75,8 @@ public class MyStack implements Stack { //last in first out LIFO
             System.out.print(stack[i] + " ");
         }
     }
+
+
 
     public MyStack combineStack(MyStack other) {
         MyStack combined = new MyStack(this.size() + other.size() );

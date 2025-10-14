@@ -1,7 +1,7 @@
-
+package lab.functions;
 
 import dataStructures.ArrayLinearList;
-import static java.lang.Math.*;
+
 import java.util.ArrayList;
 import java.util.*;
 
