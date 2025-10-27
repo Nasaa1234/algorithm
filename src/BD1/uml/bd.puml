@@ -1,0 +1,48 @@
+
+@startuml
+title CS203 - Оюутны дүн бүртгэл
+
+class Subject {
++String code
++String name
++float credit
+}
+
+class Major {
++String code
++String name
+}
+
+class Lessons {
++Subject learned
++int score
+}
+
+class Student {
++String code
++float GPA
++MyArrayLinearList lessons
++void calculateGPA()
++void convertScoreToGPA()
+}
+
+class Registration {
++MyArrayLinearList studentList
++MyArrayLinearList subjectList
++MyArrayLinearList majorList
++void showAllSubjects()
++void showAllMajors()
++void showAverageGPA()
++void showFailedStudents()
++void showGradesBySubject()
++void showGradesByMajor()
+}
+
+Registration "1" --> "*" Student : manages >
+Registration "1" --> "*" Subject : contains >
+Registration "1" --> "*" Major : contains >
+
+Student "1" --> "*" Lessons : has >
+Lessons "1" --> "1" Subject : learned >
+
+@enduml

@@ -1,0 +1,2 @@
+CS101/Programming/3.0
+CS102/Algorithms/3.0

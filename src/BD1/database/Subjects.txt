@@ -1,1 +1,6 @@
-CS204/Ugugdliin butets/3
+MTM121/Mathematics/3.0
+PHM101/Physics/3.0
+CFM100/Programming/4.0
+CSM203/DataStructures/3.0
+ITM204/Databases/3.0
+NSM230/Cryptography/2.0

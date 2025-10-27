@@ -75,6 +75,7 @@ public class HashTable {
         int index = hash(theKey);
         int start = index;
         while (table[index] != null) {
+
             if (table[index].key.equals(theKey)) {
                 table[index] = null;
                 size--;

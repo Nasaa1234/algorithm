@@ -1,1 +1,4 @@
-SW/Program hangamj
+CS/ComputerScience
+SW/SoftwareEngineering
+IT/InformationTechnology
+IS/InformationSystems
