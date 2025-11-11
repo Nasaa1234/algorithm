@@ -1,0 +1,25 @@
+Arrival AR48-50 -> There is room.
+Arrival UB21-22 -> There is room.
+Arrival UB11-11 -> There is room.
+Departure AR48-50 -> 2 cars moved out.
+Arrival HO66-66 -> There is room.
+Arrival UB00-01 -> There is room.
+Departure UB11-11 -> 2 cars moved out.
+Arrival BU00-19 -> There is room.
+Arrival UB75-07 -> There is room.
+Departure OM99-99 -> This car not in the garage.
+Arrival TO40-04 -> There is room.
+Departure BU00-19 -> 2 cars moved out.
+Departure HO66-66 -> 3 cars moved out.
+Arrival SU25-00 -> There is room.
+Arrival DA01-60 -> There is room.
+Arrival UB50-01 -> There is room.
+Arrival UB29-87 -> There is room.
+Departure UB21-22 -> 7 cars moved out.
+Arrival ZA09-87 -> There is room.
+Arrival DU66-70 -> There is room.
+Arrival OR50-50 -> There is room.
+Arrival OB56-76 -> Garage full, this car cannot enter.
+Departure OR50-50 -> 0 cars moved out.
+Departure ZA09-87 -> 1 cars moved out.
+Departure TO40-04 -> 5 cars moved out.

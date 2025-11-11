@@ -19,11 +19,9 @@ public class ExpressionTest {
     @Test
     @DisplayName("Test building from postfix")
     void testBuildFromPostfix() {
-        // Expression: (a + (b * c))
         String[] postfix = {"a", "b", "c", "*", "+"};
         exp.buildFromPostfix(postfix);
 
-        // Capture output
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(out));
 
@@ -41,7 +39,6 @@ public class ExpressionTest {
     @Test
     @DisplayName("Test building from prefix")
     void testBuildFromPrefix() {
-        // Expression: (+ a (* b c))
         String[] prefix = {"+", "a", "*", "b", "c"};
         exp.buildFromPrefix(prefix);
 
@@ -62,7 +59,6 @@ public class ExpressionTest {
     @Test
     @DisplayName("Test building from infix")
     void testBuildFromInfix() {
-        // Expression: (a + (b * c))
         String[] infix = {"(", "a", "+", "(", "b", "*", "c", ")", ")"};
         exp.buildFromInfix(infix);
 
@@ -83,7 +79,6 @@ public class ExpressionTest {
     @Test
     @DisplayName("Test evaluate numeric expression")
     void testEvaluateNumeric() {
-        // Expression: (3 + (4 * 5)) = 23
         String[] postfix = {"3", "4", "5", "*", "+"};
         exp.buildFromPostfix(postfix);
 
@@ -94,11 +89,9 @@ public class ExpressionTest {
     @Test
     @DisplayName("Test evaluate with variables (simulated input)")
     void testEvaluateWithVariables() {
-        // Expression: (a + (b * c))
         String[] postfix = {"a", "b", "c", "*", "+"};
         exp.buildFromPostfix(postfix);
 
-        // Simulate user input for a, b, c
         String input = "2\n3\n4\n";
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);

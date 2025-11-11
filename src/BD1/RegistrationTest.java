@@ -17,9 +17,9 @@ public class RegistrationTest {
         reg = new Registration();
 
         createTestFiles();
-        reg.loadSubjects("Subjects_test.txt");
-        reg.loadMajors("Majors_test.txt");
-        reg.loadStudents("Exams_test.txt");
+        reg.loadSubjects("src/BD1/database/Subjects_test.txt");
+        reg.loadMajors("src/BD1/database/Majors_test.txt");
+        reg.loadStudents("src/BD1/database/Exams_test.txt");
     }
 
     private void createTestFiles() throws IOException {
