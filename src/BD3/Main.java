@@ -75,7 +75,7 @@ public class Main extends Application {
         g.addEdge(0, 4, 1); // A-E (1)
         g.addEdge(1, 2, 3); // B-C (3)
         g.addEdge(1, 4, 8); // B-E (8)
-        g.addEdge(2, 4, 2); // C-E (2)
+        g.addEdge(2, 4, 12); // C-E (2)
         g.addEdge(2, 3, 6); // C-D (6)
         g.addEdge(4, 3, 7); // E-D (7)
 
